@@ -5,20 +5,33 @@
 //the remove function should update the weight
 //and let the user know when ok to proceed
 
-let check = () => alert('Checking Baggage weight: ' + parseInt(document.getElementById('weight').value));
-let remove = () => alert('Removing weight: ' + parseInt(document.getElementById('removed').value))
+const checkWeight = () => {
+  let weight = parseInt(document.getElementById("weight").value);
 
-//write a function to alert if overweight (15kg) baggage
-let weight = parseInt(document.getElementById('weight').value);
-
-const checkBaggageWeight = () => {
   if (weight > 15) {
     alert("Overweight baggage detected!");
     document.getElementById("removed").style.display = "block";
     document.getElementById("remB").style.display = "block";
   } else {
-    return check();
+    return alert(
+      "Checking Baggage weight: " +
+        parseInt(document.getElementById("weight").value)
+    );
+  }
+};
+
+const removeWeight = () => {
+  let weight = parseInt(document.getElementById("weight").value);
+  let newWeight = weight - parseInt(document.getElementById("removed").value);
+
+  console.log(newWeight);
+  if (newWeight <= 15) {
+    alert("Baggage weight accepted.");
+    document.getElementById("removed").style.display = "none";
+    document.getElementById("remB").style.display = "none";
+    document.getElementById("weight").value = newWeight;
+  } else {
+    alert("Baggage is still overweight. Please remove more weight.");
   }
 }
-
 //call it from the page
