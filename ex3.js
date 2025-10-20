@@ -14,12 +14,15 @@ const eulerlist = () => {
     }
 
     let sum = 0;
+    console.log(i);
 
     for (let i = 0; i <= listArray.length - 1; i++) {
-        if (i % a === 0 || i % b === 0) {
-            sum += listArray[i];
-        }
+    if (listArray[i] % a === 0 || listArray[i] % b === 0) {
+      console.log(listArray[i]);
+
+      sum += listArray[i];
     }
+  }
 
     return alert(sum);
 };
