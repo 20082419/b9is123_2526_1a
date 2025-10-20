@@ -5,24 +5,17 @@ const eulerlist = () => {
     let b = parseInt(document.getElementById("b1").value);
     let l = document.getElementById("l").value;
 
-    console.log(a);
-    console.log(b);
-    console.log(l);
-
     for (let i = 0; i < l.length; i++) {
         listArray.push(parseInt(l[i]));
     }
 
     let sum = 0;
-    console.log(i);
 
     for (let i = 0; i <= listArray.length - 1; i++) {
-    if (listArray[i] % a === 0 || listArray[i] % b === 0) {
-      console.log(listArray[i]);
-
-      sum += listArray[i];
+        if (listArray[i] % a === 0 || listArray[i] % b === 0) {
+            sum += listArray[i];
+        }
     }
-  }
 
     return alert(sum);
 };
