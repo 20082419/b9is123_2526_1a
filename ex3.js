@@ -1,12 +1,16 @@
-let a = parseInt(document.getElementById("a1").value);
-let b = parseInt(document.getElementById("b1").value);
-let l = document.getElementById("l").value;
-
 let listArray = [];
 
 const eulerlist = () => {
+    let a = parseInt(document.getElementById("a1").value);
+    let b = parseInt(document.getElementById("b1").value);
+    let l = document.getElementById("l").value;
+
+    console.log(a);
+    console.log(b);
+    console.log(l);
+
     for (let i = 0; i < l.length; i++) {
-        listArray.push(parseInt(i));
+        listArray.push(parseInt(l[i]));
     }
 
     let sum = 0;
