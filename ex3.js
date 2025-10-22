@@ -20,14 +20,36 @@ const eulerlist = () => {
     return alert(sum);
 };
 
-let euler2Lists = () => {
-    a = [2, 3]; //can un-hardcode
-    l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
-    //call listEuler2 and alert.
-};
+// let euler2Lists = () => {
+//     a = [2, 3]; //can un-hardcode
+//     l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
+//     //call listEuler2 and alert.
+// };
 
-let euler2Lists1 = () => {
-    a = [2, 3, 5]; //can un-hardcode
-    l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
-    //call listEuler3 and alert.
+// let euler2Lists1 = () => {
+//     a = [2, 3, 5]; //can un-hardcode
+//     l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
+//     //call listEuler3 and alert.
+// };
+
+// let euler2Lists = () => {
+//   a = [2, 3]; //can un-hardcode
+//   l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
+//   //call listEuler2 and alert.
+// };
+
+// let euler2Lists1 = () => {
+//   a = [2, 3, 5]; //can un-hardcode
+//   l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
+//   //call listEuler3 and alert.
+// };
+
+const euler2Lists = () => {
+  let aList = document.getElementById("aList").value;
+  let mList = document.getElementById("mList").value;
+
+  for (let i = 0; i < aList.length; i++) {
+    parseInt(aList[i]);
+    console.log(aList[i]);
+  }
 };
