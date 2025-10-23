@@ -53,6 +53,7 @@ const euler2Lists = () => {
         for (let j = 0; j < aListArray.length; j++) {
             if (mListArray[i] % aListArray[j] === 0) {
                 sum += mListArray[i];
+                break;
             }
         }
     }
