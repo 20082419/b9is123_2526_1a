@@ -46,4 +46,16 @@ const euler2Lists = () => {
     for (let i = 0; i < mList.length; i++) {
         mListArray.push(parseInt(mList[i]));
     }
+
+    let sum = 0;
+
+    for (let i = 0; i < aListArray.length; i++) {
+        for (let j = 0; j < mListArray.length; j++) {
+            if (mListArray[j] % aListArray[i] === 0) {
+                sum += mListArray[i];
+            }
+        }
+    }
+
+    return alert(sum);
 };
