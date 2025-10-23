@@ -32,24 +32,18 @@ const eulerlist = () => {
 //     //call listEuler3 and alert.
 // };
 
-// let euler2Lists = () => {
-//   a = [2, 3]; //can un-hardcode
-//   l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
-//   //call listEuler2 and alert.
-// };
-
-// let euler2Lists1 = () => {
-//   a = [2, 3, 5]; //can un-hardcode
-//   l = [1, 2, 3, 4, 5, 6, 7, 9, 10, 10, 10];
-//   //call listEuler3 and alert.
-// };
-
 const euler2Lists = () => {
-  let aList = document.getElementById("aList").value;
-  let mList = document.getElementById("mList").value;
+    let aList = document.getElementById("aList").value;
+    let mList = document.getElementById("mList").value;
 
-  for (let i = 0; i < aList.length; i++) {
-    parseInt(aList[i]);
-    console.log(aList[i]);
-  }
+    let aListArray = [];
+    let mListArray = [];
+
+    for (let i = 0; i < aList.length; i++) {
+        aListArray.push(parseInt(aList[i]));
+    }
+
+    for (let i = 0; i < mList.length; i++) {
+        mListArray.push(parseInt(mList[i]));
+    }
 };
